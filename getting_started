@@ -1,0 +1,19 @@
+These files are the changes that I have made while setting up RetroPie v3.
+When setting up a new instance, the following changes need to be made:
+
+0) Assuming you're starting totally fresh, change the default password or setup ssh certs.
+1) Image SD care with new RetroPie version. Pull down contents of this repo.
+2) Copy all files to the appropriate location based on where they are located in the repo (TODO: look into creating deb package)
+3) Modify /etc/network/interfaces to specify the static IP and router IP
+4) Update /etc/wpa_supplicant/wpa_supplicant.conf with the network SSID and PSK
+5) Update /etc/fstab with the host of the rom files
+6) Create a new .smbcredentials file in /home/pi
+7) Update raspi-config:
+    - Expand filesystem
+    - Update internationalization options
+    - Overclock to Pi2
+    - Ensure SSH is enabled in Advanced Options
+8) Run ~/RetroPie-Setup/retropie-setup.sh
+    - Update the setup script
+    - Run the binary based installation
+    - Setup joypad

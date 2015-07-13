@@ -1,0 +1,15 @@
+auto lo
+auto wlan0
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+iface wlan0 inet static
+# Desired static IP
+address 192.168.x.x
+netmask 255.255.255.0
+# Router IP
+gateway 192.168.x.x
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+iface default inet dhcp

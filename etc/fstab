@@ -1,0 +1,18 @@
+
+proc            /proc           proc    defaults          0       0
+/dev/mmcblk0p1  /boot           vfat    defaults          0       2
+/dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
+# a swapfile is not a swap partition, so no using swapon|off from here on, use  dphys-swapfile swap[on|off]  for that
+
+//<host_or_ip>/ROMs/NES /home/pi/RetroPie/roms/nes cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/SNES /home/pi/RetroPie/roms/snes cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/Atari /home/pi/RetroPie/roms/atari2600 cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/Gameboy_Advance /home/pi/RetroPie/roms/gba cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/mame /home/pi/RetroPie/roms/mame-mame4all cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/mame /home/pi/RetroPie/roms/mame-advmame cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/NeoGeo /home/pi/RetroPie/roms/neogeo cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/Sega_Genesis /home/pi/RetroPie/roms/megadrive cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/Sega_Master_System /home/pi/RetroPie/roms/mastersystem cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/Turbografix-16 /home/pi/RetroPie/roms/pcengine cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/Gameboy /home/pi/RetroPie/roms/gb cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
+//<host_or_ip>/ROMs/N64 /home/pi/RetroPie/roms/n64 cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0 
